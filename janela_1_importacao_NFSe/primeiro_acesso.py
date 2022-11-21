@@ -6,6 +6,7 @@ def acesso_inicial_NFSe(cliente, DT_inicial, DT_final, path, acesso_inicial):
 
     sleep(3)
     pyautogui.write(cliente)
+    sleep(2)
     pyautogui.press('enter')
     sleep(2)
     pyautogui.write(DT_inicial)
@@ -17,7 +18,7 @@ def acesso_inicial_NFSe(cliente, DT_inicial, DT_final, path, acesso_inicial):
     pyautogui.press('enter')
     sleep(1)
     pyautogui.press('enter')
-    sleep(1)
+    sleep(3)
     # if acesso_inicial:
     pyautogui.click(x=525, y=444, duration=1)
     # pyautogui.hotkey('backspace')
