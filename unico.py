@@ -18,6 +18,7 @@ if __name__ == '__main__':
     acesso_inicial = True
     for path in os.listdir(f'U:\\Tributario\\Jose Abdes\\2022'):
         full_path = f'X:\\Tributario\\Jose Abdes\\2022' + os.sep + path
+        print(full_path)
         acesso_inicial_NFSe('2149', DT_inicial, DT_final,
                             full_path, acesso_inicial)
         importar_notas_final('2149')
