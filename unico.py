@@ -6,8 +6,8 @@ from janela_2_importacao_NFSe.importacao_janela2 import importar_notas_final
 
 import pyautogui
 import os
-DT_inicial = '01112022'
-DT_final = '30112022'
+DT_inicial = '01122022'
+DT_final = '31122022'
 
 LOCAL_GRAVAR_LOGS = 'R:\Compartilhado\Ti\log_NFSe_jose\log_jose.txt'
 
@@ -18,16 +18,16 @@ def salvar_logs(conteudo):
 
 if __name__ == '__main__':
 
-    logar_unico()
+    # logar_unico()
     acessar_modulo_fiscal()
     acessar_modulo_importacao_municipal()
     acesso_inicial = True
-    lista_pastas = os.listdir(f'U:\\Tributario\\Jose Abdes\\2022')
+    lista_pastas = os.listdir(f'U:\\Tributario\\Jose Abdes\\NFS\\2022')
     
    
-    for path in os.listdir(f'U:\\Tributario\\Jose Abdes\\2022'):
+    for path in os.listdir(f'U:\\Tributario\\Jose Abdes\\NFS\\2022'):
        
-        full_path = f'X:\\Tributario\\Jose Abdes\\2022' + os.sep + path
+        full_path = f'X:\\Tributario\\Jose Abdes\\NFS\\2022' + os.sep + path
         
         acesso_inicial_NFSe('2149', DT_inicial, DT_final,
                             full_path, acesso_inicial)
